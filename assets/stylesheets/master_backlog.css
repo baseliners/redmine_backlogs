@@ -1,8 +1,7 @@
-#backlogs_container{
-  display:block;
+#backlogs_container{  display:block;
   margin:10px auto;
   position:relative;
-  width:1190px;
+  width:1350px;
 }
 #dummy_backlog_container{
   height:150px;
@@ -12,16 +11,16 @@
   left:0;
   position:absolute;
   top:0;
-  width:590px;
+  width:655px;
 }
 #product_backlog_container{
   position:absolute;
   right:0;
   top:0;
-  width:590px;
+  width:655px;
 }
 #sprint_backlogs_container{
-  width:590px;
+  width:655px;
 }
 #product_backlog_container .closedbacklog .header > .add_new_story,
 #product_backlog_container .backlog .header > .add_new_story {
@@ -35,7 +34,7 @@
   top:1px;
   width:100px;
 }
-#product_backlog_container .closedbacklog .header > .add_new_sprint, 
+#product_backlog_container .closedbacklog .header > .add_new_sprint,
 #product_backlog_container .backlog .header > .add_new_sprint {
   font-size:11px;
   height:28px;
@@ -74,9 +73,9 @@
   width:100%;
   /* IE only*/
   border: 1px solid #CCCCCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#ddd));
+  background: -moz-linear-gradient(top, #EEE, #ddd);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#dddddd);
 }
 
 #product_backlog_container .closedbacklog,
@@ -93,19 +92,30 @@
   height:30px;
   position:relative;
   width:100%;
-  border-bottom: 1px solid #AAAAAA
+  border-bottom: 1px solid #AAAAAA;
 }
 
 
 #backlogs_container .backlog .header{
+  background-color:#EEEEEE;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#DDD));
+  background: -moz-linear-gradient(top, #FFF, #DDD);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FFFFFF,EndColorStr=#DDDDDD);
+  border-right:1px dotted #CFCFCF;
+  color:#4E4E4E;
+  font-size:14px;
+  font-weight:bold;
+  height:30px;
+  /*text-align:center;*/
+  vertical-align:middle;
   -moz-border-radius:5px 5px 0px 0px;
   -webkit-border-radius:5px 5px 0px 0px;
   border-radius:5px 5px 0px 0px;
-  background-color:#CCCCCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
+  /*background-color:#CCCCCC;*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));*/
+  /*background: -moz-linear-gradient(top, #EEE, #CCC);*/
   filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
-  height:30px;
+  /*height:30px;*/
   position:relative;
   width:100%;
   border-bottom: 1px solid #AAAAAA
@@ -259,7 +269,7 @@
   padding:0 3px 0 9px;
   position:absolute;
   right:9px;
-  text-align:right;
+  text-align:left;
   top:1px;
   width:28px;
 }
@@ -350,7 +360,7 @@
   background-color:#FFFFF6;
   cursor:move;
 /*  display:block;*/
-  font-size:11px;
+  font-size:13px;
 /*  height:26px;*/
   margin:0;
 /*  overflow:hidden;*/
@@ -391,12 +401,16 @@
 /*  white-space:nowrap;*/
 }
 #backlogs_container .stories .story .id .t * {
-  background-color:#CCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
+  background-color:#EEEEEE;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ccc));
+  background: -moz-linear-gradient(top, #FFF, #DDD);
+ 
+  /*background-color:#CCC;*/
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));*/
+  /*background: -moz-linear-gradient(top, #EEE, #CCC);*/
   filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
   display:block;
-  font-size:10px;
+  font-size:12px;
   height:14px;
 /*  left:0px; */
   line-height:14px;
@@ -404,7 +418,7 @@
   padding-right:3px;
   margin-left:3px;
 /*  position:absolute;*/
-  text-align:right;
+  text-align:center;
   text-decoration:none;
   position: relative;
 /*  top:5px;*/
@@ -427,7 +441,7 @@
   display:none;
 }
 #backlogs_container .stories .story .project {
-  display:block;
+  display:none;
   position:relative;
   float:left;
   width:55px;
@@ -437,6 +451,7 @@
 }
 #backlogs_container .stories .story .project .t {
   overflow:hidden;
+  text-align:center;
 }
 #backlogs_container .stories .story .project .v {
   display:none;
@@ -455,7 +470,7 @@
 /*  position:absolute;
   top:1px;*/
   float:left;
-  width:30em;
+  width:32em;
   margin-right:2em;
   white-space:nowrap;
 }
@@ -482,7 +497,7 @@
 /*  position:absolute;
   top:1px;*/
   float:left;
-  width:68px;
+  width:88px;
 }
 #backlogs_container .stories .story .status_id .v {
   display:none;
@@ -499,9 +514,9 @@
   overflow:hidden;*/
   padding:5px 5px 4px 5px;
 /*  position:absolute;*/
-  text-align:right;
+  text-align:left;
 /*  top:1px;*/
-  float: right;
+  float: left;
   width:3em;
 }
 #backlogs_container .stories .story .story_points .v {
@@ -631,6 +646,7 @@
   font-size: 11px;
   margin:0;
   float: left;
+  width:430px;
 }
 #backlogs_container .stories .story.editing .status_id.editor{
   display:block;
@@ -641,13 +657,14 @@
 }
 #backlogs_container .stories .story.editing select.story_points.editor {
   display:block;
-  left:540px;
+  /*left:540px;*/
   margin:0;
   padding: 0px;
   height: inherit;
   top: 4px;
-  width: 40px;
+  width: 55px;
   overflow: visible;
+  float:left;
 }
 #backlogs_container .stories .story.editing input.story_points.editor {
   display:block;
@@ -658,7 +675,7 @@
 
 #backlogs_container .stories .editing .story_points {
     display: none;
-} 
+}
 
 
 #helpers{
@@ -680,7 +697,7 @@
 }
 
 #closed_sprint_backlogs_container{
-  width:590px;
+  width:655px;
 }
 
 #backlogs_container .stories .story .category_id .v {
@@ -691,7 +708,7 @@
   left:456px;
   margin:0;
   top:4px;
-  width:68px;
+  width:88px;
 }
 /* Naive but light handling of colors by user stories tracker */
 
@@ -708,10 +725,10 @@
   background-color:#EDD5EE;
 }
 #backlogs_container .stories .tracker2{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#E0E3FA));
-  background: -moz-linear-gradient(top, #EEE, #E0E3FA);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#E0E3FA);
-  background-color:#E0E3FA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+  background: -moz-linear-gradient(top, #ffffff, #eeeeee);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#ffffff,EndColorStr=#eeeeee);
+  background-color:#eeeeee;
 }
 #backlogs_container .stories .tracker3{
   background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#EAD6C8));
@@ -720,10 +737,10 @@
   background-color:#EAD6C8;
 }
 #backlogs_container .stories .tracker4{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#E7FAE0));
-  background: -moz-linear-gradient(top, #EEE, #E7FAE0);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#E7FAE0);
-  background-color:#E7FAE0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#d6f6ca));
+  background: -moz-linear-gradient(top, #EEE, #d6f6ca);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#d6f6ca);
+  background-color:#d6f6ca;
 }
 #backlogs_container .stories .tracker5{
   background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#DAFEF8));
