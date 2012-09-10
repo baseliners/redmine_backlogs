@@ -3,7 +3,7 @@ require 'benchmark'
 class UniquePositions < ActiveRecord::Migration
   def self.up
     RbStory.transaction do
-      ids = RbStory.connection.select_values('select id from issues order by position')
+      ids = RbStory.connection.select_values('select id from issues order by priority_id desc')
       ids.each_with_index{|id, i|
         RbStory.connection.execute("update issues set position = #{i * RbStory.list_spacing} where id = #{id}")
       }
